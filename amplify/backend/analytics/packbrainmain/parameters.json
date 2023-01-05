@@ -1,0 +1,21 @@
+{
+    "appName": "packbrainmain",
+    "roleName": "pinpointLambdaRolecf348f4d",
+    "cloudformationPolicyName": "cloudformationPolicycf348f4d",
+    "cloudWatchPolicyName": "cloudWatchPolicycf348f4d",
+    "pinpointPolicyName": "pinpointPolicycf348f4d",
+    "authPolicyName": "pinpoint_amplify_cf348f4d",
+    "unauthPolicyName": "pinpoint_amplify_cf348f4d",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}
